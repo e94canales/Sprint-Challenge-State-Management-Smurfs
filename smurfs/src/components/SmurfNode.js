@@ -18,7 +18,12 @@ const SmurfNode = props => {
    
 
     return (
+        <div>
+        <div className='village'>
+               <h4>MY VILLAGE</h4>
+            </div>
         <div className='cardsContainer'>
+            
             {props.smurfData.map( e => {
                 return (
                     <div key={e.id} className='card'>
@@ -29,6 +34,7 @@ const SmurfNode = props => {
                     </div>
                 )
             })}
+        </div>
         </div>
     )
 }

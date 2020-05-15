@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   max-width: 100%;
 }
+body {
+  background-color: rgb(220, 248, 238);
+}
 .formContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
-  padding: 1%;
+  border-bottom: solid 1px rgb(200, 198, 198);
+  padding: 1% 1% 2% 1%;
 }
 form {
   display: flex;
@@ -25,14 +29,25 @@ input {
 h3 {
   text-align: center;
   margin-top: 1%;
+  font-size: 3rem;
+  font-family: 'Montserrat';
+  color: rgb(56, 55, 55);
 }
 button {
   padding: .5% 5%;
   border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover{
+  background-color: rgb(32, 31, 31);
+  color: white;
 }
 .cardsContainer {
   display: flex;
-
+  font-family: 'Poppins';
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
   margin: 1%;
@@ -46,6 +61,7 @@ button {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  filter: drop-shadow(0 2px 2px rgb(78, 77, 77));
 }
 .removeBtn {
   padding: 10px;
@@ -63,5 +79,14 @@ h1 {
   margin-bottom: 1%;
 }
 h5 {
-  color: rgb(163, 162, 162);
+  color: rgb(190, 189, 189);
+}
+h4 {
+  padding: 0 2%;
+  font-size: 1.2rem;
+}
+.village {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 1%;
 }
